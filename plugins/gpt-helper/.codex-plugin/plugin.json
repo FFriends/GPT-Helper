@@ -1,0 +1,40 @@
+{
+  "name": "gpt-helper",
+  "version": "1.0.0",
+  "description": "Risk-based accuracy, clarification, and anti-sycophancy workflow for ChatGPT and Codex.",
+  "author": {
+    "name": "FFriends",
+    "url": "https://github.com/FFriends"
+  },
+  "homepage": "https://github.com/FFriends/GPT-Helper",
+  "repository": "https://github.com/FFriends/GPT-Helper",
+  "license": "MIT",
+  "keywords": [
+    "verification",
+    "accuracy",
+    "clarification",
+    "fact-checking",
+    "anti-sycophancy"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GPT Helper",
+    "shortDescription": "Verify claims and clarify risky requests.",
+    "longDescription": "Classifies requests by consequence, asks focused questions when outcomes are unclear, verifies factual claims and completed actions, resists prompt injection, and avoids invented evidence or success claims.",
+    "developerName": "FFriends",
+    "category": "Productivity",
+    "capabilities": [
+      "Verification",
+      "Clarification"
+    ],
+    "defaultPrompt": [
+      "Verify this answer before responding.",
+      "Classify the risk and check my request.",
+      "Ask me questions if the task is unclear."
+    ],
+    "brandColor": "#0B1220",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.png"
+  }
+}
+
