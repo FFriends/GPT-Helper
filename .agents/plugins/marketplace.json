@@ -1,0 +1,21 @@
+{
+  "name": "ffriends",
+  "interface": {
+    "displayName": "FFriends Plugins"
+  },
+  "plugins": [
+    {
+      "name": "gpt-helper",
+      "source": {
+        "source": "local",
+        "path": "./plugins/gpt-helper"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
+
