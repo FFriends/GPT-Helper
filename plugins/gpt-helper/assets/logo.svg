@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Verify Before Answer</title>
+  <desc id="desc">A cyan check mark inside a shield on a dark background.</desc>
+  <rect width="512" height="512" rx="112" fill="#0B1220"/>
+  <path d="M256 70 404 126v112c0 96-59 167-148 204-89-37-148-108-148-204V126L256 70Z" fill="#111C32" stroke="#57D4FF" stroke-width="24" stroke-linejoin="round"/>
+  <path d="m174 252 54 55 112-119" fill="none" stroke="#8AF0C8" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
