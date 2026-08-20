@@ -1,0 +1,11 @@
+{
+  "interface": {
+    "display_name": "Verify Before Answer",
+    "short_description": "Risk-based verification and clarification",
+    "default_prompt": "Use $verify-before-answer to classify priority, clarify ambiguity, verify claims and actions, and answer without flattery."
+  },
+  "policy": {
+    "allow_implicit_invocation": true
+  }
+}
+
