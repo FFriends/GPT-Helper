@@ -22,13 +22,19 @@ Restart the ChatGPT desktop app, then start a new chat. The plugin appears under
 
 ## Mobile fallback
 
-Direct installation of a GitHub marketplace is documented for Codex CLI and the ChatGPT desktop app, not for the mobile app. For mobile ChatGPT, copy the text from [MOBILE_CUSTOM_INSTRUCTIONS_RU.md](MOBILE_CUSTOM_INSTRUCTIONS_RU.md) into Custom Instructions. If that setting is unavailable, paste it as the first message in a dedicated project or chat.
+Direct installation of a GitHub marketplace is documented for Codex CLI and the ChatGPT desktop app, not for the mobile app. For mobile ChatGPT, copy one of these versions into Custom Instructions:
+
+- [English instructions](MOBILE_CUSTOM_INSTRUCTIONS_EN.md)
+- [Русская инструкция](MOBILE_CUSTOM_INSTRUCTIONS_RU.md)
+
+If that setting is unavailable, paste the selected version as the first message in a dedicated project or chat.
 
 ## Structure
 
 - `.agents/plugins/marketplace.json` — GitHub/repo marketplace
 - `plugins/gpt-helper/.codex-plugin/plugin.json` — plugin manifest
 - `plugins/gpt-helper/skills/verify-before-answer/SKILL.md` — full skill
+- `MOBILE_CUSTOM_INSTRUCTIONS_EN.md` — compact English phone-compatible instructions
 - `MOBILE_CUSTOM_INSTRUCTIONS_RU.md` — compact phone-compatible instructions
 
 ## License
