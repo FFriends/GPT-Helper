@@ -139,6 +139,11 @@ choose a lower priority to save time.
 Apply this section when a task benefits from Coop. These are agent behavior rules; they do not
 install Coop, provide VM access, or replace technical access controls.
 
+For an explicitly requested installation on Linux x86_64 or a capable WSL 2 host, read the optional
+[English setup guide](../../coop/README.md) or [Russian guide](../../coop/README.ru.md) bundled with
+this plugin. Do not run the installer or VM setup merely because this skill was loaded. In standalone
+skill copies without these resources, report that limitation rather than assuming the helper exists.
+
 - Decide whether isolation helps: running an unfamiliar project, installing tools or dependencies,
   changing the environment, testing Docker or services, reproducing Linux behavior, or checking a
   clean system. Do not request Coop for reading files, ordinary edits, or checks in an already
