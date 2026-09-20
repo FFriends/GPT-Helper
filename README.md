@@ -41,11 +41,26 @@ The rules are included in the [full skill](plugins/gpt-helper/skills/verify-befo
 and both language versions above. They define agent behavior; they do not install Coop or give
 ChatGPT on mobile VM access. Machine-specific setup belongs in local instructions.
 
+## Optional Coop installer
+
+This repository also includes a **separately invoked** installer and restricted launcher for
+Coop v0.6.0 on Linux x86_64, including WSL 2 hosts with working KVM:
+
+- [English setup guide](plugins/gpt-helper/coop/README.md)
+- [Установка и настройка на русском](plugins/gpt-helper/coop/README.ru.md)
+
+The package verifies the official archive's pinned SHA-256, keeps its files separate from an
+existing Coop installation, and supplies a PowerShell 7 wrapper for Windows/WSL. Installing the
+GPT Helper plugin does **not** run this installer or create a VM. VM setup and project execution
+require separate explicit commands and task-scoped permission. Live VM execution has not been
+tested for this package; offline tests do not establish host compatibility.
+
 ## Structure
 
 - `.agents/plugins/marketplace.json` — GitHub/repo marketplace
 - `plugins/gpt-helper/.codex-plugin/plugin.json` — plugin manifest
 - `plugins/gpt-helper/skills/verify-before-answer/SKILL.md` — full skill
+- `plugins/gpt-helper/coop/` — optional Coop installer, WSL wrapper, guides, and offline tests
 - `MOBILE_CUSTOM_INSTRUCTIONS_EN.md` — compact English phone-compatible instructions
 - `MOBILE_CUSTOM_INSTRUCTIONS_RU.md` — compact phone-compatible instructions
 
