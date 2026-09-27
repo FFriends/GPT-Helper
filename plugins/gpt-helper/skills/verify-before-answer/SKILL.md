@@ -139,10 +139,14 @@ choose a lower priority to save time.
 Apply this section when a task benefits from Coop. These are agent behavior rules; they do not
 install Coop, provide VM access, or replace technical access controls.
 
-For an explicitly requested installation on Linux x86_64 or a capable WSL 2 host, read the optional
-[English setup guide](../../coop/README.md) or [Russian guide](../../coop/README.ru.md) bundled with
-this plugin. Do not run the installer or VM setup merely because this skill was loaded. In standalone
-skill copies without these resources, report that limitation rather than assuming the helper exists.
+Coop support is bundled inside this skill's `coop/` directory: installer, restricted configuration
+generator, launcher, and offline tests. For an explicitly requested installation on Linux x86_64 or
+a capable WSL 2 host, read the [English setup guide](coop/README.md) or [Russian guide](coop/README.ru.md).
+Resolve helper paths relative to this `SKILL.md`, not the current project or a sibling plugin folder.
+For standalone installation, preserve the whole skill directory, including `coop/` and `agents/`.
+Do not run installation or VM setup merely because this skill was loaded. If bundled files are missing,
+report an incomplete skill copy rather than inventing their location. Existing task-scoped consent
+requirements below still apply.
 
 - Decide whether isolation helps: running an unfamiliar project, installing tools or dependencies,
   changing the environment, testing Docker or services, reproducing Linux behavior, or checking a
