@@ -20,14 +20,25 @@ codex plugin add gpt-helper@ffriends
 
 Restart the ChatGPT desktop app, then start a new chat. The plugin appears under **FFriends Plugins** in the Plugins Directory.
 
-## Mobile fallback
+## Mobile instructions / Мобильные инструкции
 
-Direct installation of a GitHub marketplace is documented for Codex CLI and the ChatGPT desktop app, not for the mobile app. For mobile ChatGPT, copy one of these versions into Custom Instructions:
+Choose the version below and copy only the text inside its code block into Custom Instructions. Both languages prohibit flattery; mobile instructions focus on communication and verification.
 
-- [English instructions](MOBILE_CUSTOM_INSTRUCTIONS_EN.md)
-- [Русская инструкция](MOBILE_CUSTOM_INSTRUCTIONS_RU.md)
+### Free / Go — compact, up to 1500 characters
 
-If that setting is unavailable or the text does not fit, paste the selected version as the first message in a dedicated project or chat.
+Use the compact version for Free/Go and any Custom Instructions field limited to **1500 characters**. Spaces and line breaks are included in the length check:
+
+- [English — up to 1500 characters](MOBILE_CUSTOM_INSTRUCTIONS_1500_EN.md)
+- [Русский — до 1500 символов](MOBILE_CUSTOM_INSTRUCTIONS_1500_RU.md)
+
+### Plus — extended instructions
+
+Use the extended version for Plus when your Custom Instructions field accepts the full text:
+
+- [English — extended instructions](MOBILE_CUSTOM_INSTRUCTIONS_EN.md)
+- [Русский — расширенные инструкции](MOBILE_CUSTOM_INSTRUCTIONS_RU.md)
+
+Check the limit displayed in your app before saving. If your Plus field also limits text to 1500 characters, use the compact Free/Go version. The extended version can also be used as the first message in a dedicated project or chat when it fits.
 
 ## Coop isolation rules
 
@@ -37,9 +48,9 @@ forwarded data, check VM readiness, and review changes before returning them to 
 Existing permission remains valid within the same task; new tasks or expanded access require new
 permission. Routine file reading and editing do not require Coop without a concrete reason.
 
-The rules are included in the [full skill](plugins/gpt-helper/skills/verify-before-answer/SKILL.md)
-and both language versions above. They define agent behavior; they do not install Coop or give
-ChatGPT on mobile VM access. Machine-specific setup belongs in local instructions.
+For Codex and desktop workflows, the rules are included in the
+[full skill](plugins/gpt-helper/skills/verify-before-answer/SKILL.md).
+Machine-specific setup belongs in local instructions.
 
 ## Coop bundled inside the skill
 
@@ -66,8 +77,10 @@ including `coop/` and `agents/`. Copying only `SKILL.md` omits the installer. Th
 - `plugins/gpt-helper/.codex-plugin/plugin.json` — plugin manifest
 - `plugins/gpt-helper/skills/verify-before-answer/SKILL.md` — full skill
 - `plugins/gpt-helper/skills/verify-before-answer/coop/` — bundled Coop installer, WSL wrapper, guides, and offline tests
-- `MOBILE_CUSTOM_INSTRUCTIONS_EN.md` — compact English phone-compatible instructions
-- `MOBILE_CUSTOM_INSTRUCTIONS_RU.md` — compact phone-compatible instructions
+- `MOBILE_CUSTOM_INSTRUCTIONS_1500_EN.md` — English personalization text within 1500 characters
+- `MOBILE_CUSTOM_INSTRUCTIONS_1500_RU.md` — Russian personalization text within 1500 characters
+- `MOBILE_CUSTOM_INSTRUCTIONS_EN.md` — extended English instructions
+- `MOBILE_CUSTOM_INSTRUCTIONS_RU.md` — extended Russian instructions
 
 ## License
 
